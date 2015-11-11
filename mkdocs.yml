@@ -1,0 +1,6 @@
+site_name: My Resume
+pages:
+- Home: index.md
+- Specs: specs.md
+theme: readable
+
