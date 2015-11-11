@@ -1,0 +1,16 @@
+---
+repos:
+ - epel-release
+packages:
+ - ntp
+ - git
+ - python-pip
+ - httpd
+services:
+ - sshd
+ - ntpd
+ - httpd
+ - firewalld
+firewalld_services_enabled:
+ - ssh
+ - http

@@ -1,0 +1,15 @@
+---
+- name: Install MKDocs python package.
+  pip: name=mkdocs
+
+- name: pull my-resume source from gihub
+  git: repo=git://github.com/belbob/my-resume.git 
+       dest=my-resume 
+       accept_hostkey=yes
+
+- name: Go to the folder and build site
+  command: chdir=my-resume mkdocs build --clean
+  
+- name: copy files
+  shell: cp -Rf my-resume/site/* /var/www/html/
+
