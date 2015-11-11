@@ -1,4 +1,4 @@
-# Welcome to My-CV
+# Welcome to My-Resume
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
